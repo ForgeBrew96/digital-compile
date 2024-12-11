@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.shared-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 60px;
+    height: auto;
+    object-fit: contain;
+    align-self: flex-start;
+    margin-bottom: 250px;
+    margin-left: -18px;
+}
+
+.landing-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.action-button {
+    background-color: #a2c6a8;
+    color: #272626;
+    border: none;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-group .action-button:hover {
+    transform: scale(1.05);
+    background-color: #b8d6bc;
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 50px;
+        margin-bottom: 300px;
+    }
+
+    .action-button {
+        width: 100%;
+        padding: 0 180px;
+    }
+
+}
+
+@media (min-width: 481px) {
+    .action-button {
+        width: 400px;
+    }
+}
