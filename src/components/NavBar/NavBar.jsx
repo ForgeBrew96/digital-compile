@@ -23,23 +23,23 @@ const closeNav = () => {
             <ul>
 
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={closeNav}>Home</Link>
                 </li>
 
                 <li>
-                    <Link to="/protocldb">Protocol DataBase</Link>
+                    <Link to="/protocoldb" onClick={closeNav}>Protocol DataBase</Link>
                 </li>
 
                 <li>
-                    <Link to="/customcard">Create Your Own Card!</Link>
+                    <Link to="/customcard" onClick={closeNav}>Create Your Own Card!</Link>
                 </li>
 
                 <li>
-                    <Link to="/howtoplay">How To Play!</Link>
+                    <Link to="/howtoplay" onClick={closeNav}>How To Play!</Link>
                 </li>
 
                 <li>
-                    <Link to="/shop">Buy it now!</Link>
+                    <Link to="/shop" onClick={closeNav}>Buy it now!</Link>
                 </li>
 
                 <li>

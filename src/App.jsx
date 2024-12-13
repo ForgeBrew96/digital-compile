@@ -18,11 +18,27 @@ import * as cardService from './service/cardsService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
+  const [ogCards, setOgCards] = useState([])
 
   const handleSignout = () => {
-    authService.signout();
-    setUser(null);
+    authService.signout()
+    setUser(null)
+    setIsOpen(false)
   }
+
+  useEffect(() => {
+    const fetchOgCards = async () => {
+      try{
+       const originalCards = await cardService.getOriginalCard()
+       setOgCards(originalCards)
+       console.log(originalCards)
+       console.log(ogCards)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchOgCards()
+  }, [])
 
   return (
     <>
@@ -39,10 +55,10 @@ const App = () => {
         <Route path='/signup' element={<SignupForm setUser={setUser} user={user} />} />
         <Route path='/signin' element={<SigninForm setUser={setUser} user={user} />} />
 
-        <Route path='/customcard' element={<CustomCard setUser={setUser} user={user} />} />
-        <Route path='/howtoplay' element={<HowToPlay setUser={setUser} user={user} />} />
-        <Route path='/protocoldb' element={<ProtocolDB setUser={setUser} user={user} />} />
-        <Route path='/shop' element={<Shop setUser={setUser} user={user} />} />
+        <Route path='/customcard' element={<CustomCard user={user} />} />
+        <Route path='/howtoplay' element={<HowToPlay user={user} />} />
+        <Route path='/protocoldb' element={<ProtocolDB user={user} ogCards={ogCards}/>} />
+        <Route path='/shop' element={<Shop user={user} />} />
 
       </Routes>
     </>
