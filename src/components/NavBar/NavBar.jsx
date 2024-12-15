@@ -16,7 +16,7 @@ const closeNav = () => {
     <div>
 
     {user ? (
-        <nav>
+        <nav className='nav'>
           <div id="mySidebar" className={`sidebar ${isOpen ? 'open': ''}`}>
             <button className="closebtn" onClick={closeNav}>X</button>
 
