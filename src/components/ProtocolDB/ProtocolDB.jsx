@@ -92,7 +92,7 @@ const ProtocolDB = ({ user, ogCards }) => {
         <main className="overAllProtocolDB">
         <div className="backgroundMat">
             <div className='headingProtocol'>
-                <img src='public/Screenshots/compile_logo_owned.png' className="headingProtocolDB" alt="Protocol Database" />
+                <img src='./Screenshots/compile_logo_owned.png' className="headingProtocolDB" alt="Protocol Database" />
                 <button onClick={handleShowCustomCardsClick} className="custom-cards-btn">
                     {showCustomCards ? 'Show All Cards' : 'Show My Custom Cards'}
                 </button>

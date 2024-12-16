@@ -75,7 +75,7 @@
 
 .backgroundMat {
     position: relative;
-    background: url('public/Screenshots/Screenshot 2024-12-12 101328.png'); 
+    background: url('./Screenshots/Screenshot 2024-12-12 101328.png'); 
     background-size: cover; 
     z-index: 1;
 }
