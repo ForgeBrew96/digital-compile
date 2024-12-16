@@ -31,8 +31,6 @@ const App = () => {
       try{
        const originalCards = await cardService.getOriginalCard()
        setOgCards(originalCards)
-       console.log(originalCards)
-       console.log(ogCards)
       } catch (error) {
         console.log(error)
       }

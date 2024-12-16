@@ -8,6 +8,19 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.custom-cards-btn {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.custom-cards-btn.selected {
+    background-color: #007bff;
+    color: #fff;
+}
+
 .protocol-btn-background {
     display: flex;
     flex-wrap: wrap;
@@ -28,6 +41,12 @@
 .protocol-buttons button.selected {
     background-color: #007bff;
     color: #fff;
+}
+
+.headingProtocol {
+    display: flex;
+    flex-direction: column;
+    justify-content:center
 }
 
 .backgroundMat {
@@ -64,6 +83,18 @@
     overflow-y: auto;
     height: 640px;
     width: 100%;
+}
+
+.edit-card-form { 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: rgba(128, 128, 128, 0.9);
+    border: solid #000000; z-index: 100;
+    padding: 20px;
+    border-radius: 5px; 
+    padding-right: 43px
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -114,7 +145,22 @@
     z-index: 1;
 }
 
-@media (max-width: 500px) {
+.card-actions {
+    position: relative;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.customize-btn {
+ padding: 2px
+}
+
+.delete-btn {
+ padding: 2px
+}
+   
+
+@media (max-width: 920px) {
     .scroll-container {
         gap: 10px;
         width: 150%
@@ -124,5 +170,18 @@
     }
     .grid-item p {
         font-size: 75%;
+    }
+    .card-actions {
+        position: absolute;
+        z-index: 6;
+        margin-top: -5px;
+    }
+    
+    .customize-btn {
+     padding: 2px
+    }
+    
+    .delete-btn {
+     padding: 2px
     }
 }

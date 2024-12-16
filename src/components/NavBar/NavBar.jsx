@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import './NavBar.css' 
 
 
 const NavBar = ({ user, handleSignout }) => {

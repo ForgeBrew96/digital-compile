@@ -1,0 +1,14 @@
+.headingProtocolDB_rules{
+    display: flex;
+    width: 14%;
+    border: solid white;
+    border-radius: 30px;
+    margin-top: -50px;
+    margin-bottom: 20px
+}
+
+.rule-files {
+    display: flex;
+    flex-direction: column;
+    width: 340%;
+}

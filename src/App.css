@@ -1,5 +1,6 @@
 #root {
   max-width: 1280px;
+  height: auto;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -37,7 +38,7 @@ justify-content: space-around;
   z-index: 3;
   top: 0;
   left: 0;
-  background-color: #696666dc;
+  background-color: #696666e7;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -81,6 +82,7 @@ justify-content: space-around;
 .nav {
   display: flex;
   justify-content: flex-end;
+  letter-spacing: normal;
   width: 100%;
 }
 
