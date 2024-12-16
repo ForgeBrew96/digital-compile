@@ -12,3 +12,13 @@
     flex-direction: column;
     width: 340%;
 }
+
+.howToPlayLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    z-index: 5;
+    background: linear-gradient(to right, rgb(99, 48, 122), rgb(107, 26, 145), rgba(169, 93, 204, 0.932), rgba(216, 214, 214, 0.692));
+    border-radius: 9px
+}

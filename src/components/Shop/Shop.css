@@ -1,0 +1,16 @@
+.shopLink {
+    font-weight: 30px;
+    font-size: 40px;
+    color: rgb(250, 250, 250);
+    background: linear-gradient(to right, rgba(161, 20, 154, 0.87), rgba(139, 57, 177, 0.836), rgba(133, 68, 153, 0.521));
+    border-radius: 8px
+}
+
+.headingProtocolDB_shop{
+    display: flex;
+    width: 30%;
+    border: solid rgba(136, 132, 132, 0.849);
+    border-radius: 20px;
+    margin-top: -50px;
+    margin-bottom: 20px
+}
