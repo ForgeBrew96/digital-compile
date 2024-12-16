@@ -8,7 +8,7 @@ const SigninForm = (props) => {
     const [message, setMessage] = useState([''])
     const [formData, setFormData] = useState({
         username: '',
-        passworc: '',
+        password: '',
     })
 
     const updateMessage = (msg) => {
@@ -27,7 +27,12 @@ const SigninForm = (props) => {
             props.setUser(user)
             navigate('/')
         } catch (err) {
-            updateMessage(err.message)
+            console.log(err.message)
+            updateMessage('Wrong username or password')
+            setFormData({
+                username: '',
+                password: '',
+            })
         }
     }
 
@@ -36,7 +41,7 @@ const SigninForm = (props) => {
             <h1 className="signin-title">
                 Welcome<br />Back
             </h1>
-            <p>{message}</p>
+            <p className="message_box">{message}</p>
             <form autoComplete="off" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="username">Username:</label>
@@ -61,11 +66,11 @@ const SigninForm = (props) => {
                     />
                 </div>
                 <div>
-                    <button type="submit">Log In</button>
+                    <button type="submit" className="signInbtn">Log In</button>
                     <Link to="/">
-                        <button type="button">Back</button>
+                        <button type="button" className="signInbtn">Back</button>
                     </Link>
-                    <button type="button">Forgot Password?</button>
+                    <button type="button" className="signInbtn">Forgot Password?</button>
                 </div>
             </form>
         </main>

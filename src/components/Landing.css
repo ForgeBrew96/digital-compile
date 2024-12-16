@@ -2,7 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #3b76d0;
     color: black;
     display: flex;
     justify-content: center;
@@ -12,23 +12,14 @@ html, body {
     box-sizing: border-box;
 }
 
-.shared-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: left;
-    max-width: 400px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
 .logo {
-    width: 60px;
+    width: 300px;
     height: auto;
     object-fit: contain;
-    align-self: flex-start;
-    margin-bottom: 250px;
+    align-self: center;
+    margin-bottom: 230px;
     margin-left: -18px;
+    border-radius: 20%;
 }
 
 .landing-title {
@@ -36,11 +27,19 @@ html, body {
     font-weight: bold;
     margin-bottom: 10px;
     width: 100%;
+    color: #3f3dcd; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px;
+    border-radius: 5px;
 }
 
 p {
     font-size: 1.1rem;
     margin-bottom: 30px;
+    color: #7f3cbe; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .button-group {
@@ -52,8 +51,8 @@ p {
 }
 
 .action-button {
-    background-color: #a2c6a8;
-    color: #272626;
+    background-color: #c642a2; 
+    color: black;
     border: none;
     border-radius: 10px;
     max-width: 400px;
@@ -73,7 +72,7 @@ p {
 
 .button-group .action-button:hover {
     transform: scale(1.05);
-    background-color: #b8d6bc;
+    background-color: #d54768; 
 }
 
 @media (max-width: 480px) {
@@ -86,7 +85,6 @@ p {
         width: 100%;
         padding: 0 180px;
     }
-
 }
 
 @media (min-width: 481px) {

@@ -39,12 +39,9 @@ const SignupForm = (props) => {
   };
 
   return (
-    <main className="shared-container">
-      {/* <Link to="/">
-        <button className="back-button">←</button>
-      </Link> */}
+    <main className="shared-container createAccountBox">
       <h1>Create<br/>Account</h1>
-      <p>{message}</p>
+      <p className="message_box">{message}</p>
       <form className="signup-form" onSubmit={handleSubmit}>
         <div className="input-group">
           <label htmlFor="username">Username:</label>
@@ -77,9 +74,9 @@ const SignupForm = (props) => {
           />
         </div>
         <div>
-          <button className="submit-button" disabled={isFormInvalid()}>Sign Up</button>
+          <button className="submit-button signUpbtn" disabled={isFormInvalid()}>Sign Up</button>
           <Link to="/">
-            <button>Back</button>
+            <button className="signUpbtn">Back</button>
           </Link>
         </div>
       </form>

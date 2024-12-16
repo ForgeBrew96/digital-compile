@@ -77,9 +77,10 @@ const ProtocolDB = ({ user, ogCards }) => {
     const protocolIds = Array.from(new Set(ogCards.map(card => card.protocol_id)))
 
     return (
+        <main className="overAllProtocolDB">
         <div className="backgroundMat">
             <div className='headingProtocol'>
-                <img src='protocol_images/Screenshots/compile_logo_owned.png' className="headingProtocolDB" alt="Protocol Database" />
+                <img src='public/Screenshots/compile_logo_owned.png' className="headingProtocolDB" alt="Protocol Database" />
                 <button onClick={handleShowCustomCardsClick} className="custom-cards-btn">
                     {showCustomCards ? 'Show All Cards' : 'Show My Custom Cards'}
                 </button>
@@ -138,11 +139,11 @@ const ProtocolDB = ({ user, ogCards }) => {
                 {filteredCards.map(card => (
                     <div className="grid-item" key={card.card_id}>
                         <img src={card.img_url} alt={card.name} />
-                        <p>{card.name}</p>
-                        <p>Point Value: {card.point_value}</p>
-                        <p><strong>Top:</strong> {card.effects.top}</p>
-                        <p><strong>Middle:</strong> {card.effects.middle}</p>
-                        <p><strong>Bottom:</strong> {card.effects.lower}</p>
+                        <p className="cardText">{card.name}</p>
+                        <p className="cardText">Point Value: {card.point_value}</p>
+                        <p className="cardText"><strong>Top:</strong> {card.effects.top}</p>
+                        <p className="cardText"><strong>Middle:</strong> {card.effects.middle}</p>
+                        <p className="cardText"><strong>Bottom:</strong> {card.effects.lower}</p>
                         {showCustomCards && (
                             <div className="card-actions">
                                 <button onClick={() => handleCustomizeCard(card)} className="customize-btn">
@@ -216,6 +217,7 @@ const ProtocolDB = ({ user, ogCards }) => {
                 </form>
             )}
         </div>
+        </main>
     );
 }    
 
