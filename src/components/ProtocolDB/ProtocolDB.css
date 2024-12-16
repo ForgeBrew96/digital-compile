@@ -6,7 +6,7 @@
     border: 2px solid #000000;
     margin: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 10px; /* Add padding for a neat row */
+    padding: 10px;
 }
 
 .protocol-btn-background {
@@ -183,7 +183,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; /* Adjust to fit within card style */
+    height: 100%;
     object-fit: cover;
     z-index: 0;
 }
@@ -206,59 +206,59 @@
 @media (max-width: 920px) {
     .scroll-container {
         gap: 10px;
-        overflow-y: auto; /* Ensure vertical scroll for smaller screens */
-        grid-template-rows: repeat(3, auto); /* Increase rows for smaller screens */
+        overflow-y: auto; 
+        grid-template-rows: repeat(3, auto); 
     }
     .grid-item {
-        flex: 0 0 calc((100% / 2) - 10px); /* Adjust size for smaller screens */
-        height: 250px; /* Adjust height */
-        width: 150px; /* Maintain aspect ratio */
+        flex: 0 0 calc((100% / 2) - 10px); 
+        height: 250px; 
+        width: 150px; 
     }
     .grid-item .cardText {
         font-size: 12px;
         padding: 5px;
     }
     .card-actions {
-        flex-direction: row; /* Keep actions in a row */
+        flex-direction: row;
         align-items: center;
     }
     .customize-btn, .delete-btn {
-        padding: 5px; /* Adjust padding for smaller screens */
+        padding: 5px;
     }
 }
 
 @media (max-width: 600px) {
     .scroll-container {
         gap: 5px;
-        overflow-y: auto; /* Ensure vertical scroll for smaller screens */
-        grid-template-rows: repeat(4, auto); /* Increase rows for very small screens */
+        overflow-y: auto; 
+        grid-template-rows: repeat(4, auto); 
     }
     .grid-item {
-        flex: 0 0 calc((100% / 1) - 10px); /* Single column for very small screens */
-        height: 200px; /* Adjust height */
-        width: 130px; /* Maintain aspect ratio */
+        flex: 0 0 calc((100% / 1) - 10px);
+        height: 200px; 
+        width: 130px;
     }
     .grid-item .cardText {
         font-size: 12px;
         padding: 5px;
     }
     .card-actions {
-        flex-direction: row; /* Keep actions in a row */
+        flex-direction: row; 
         align-items: center;
     }
     .customize-btn, .delete-btn {
-        padding: 5px; /* Adjust padding for smaller screens */
+        padding: 5px;
     }
 }
 
 @media (min-width: 921px) {
     .scroll-container {
-        grid-template-rows: repeat(2, auto); /* Default rows for larger screens */
+        grid-template-rows: repeat(2, auto);
     }
     .grid-item {
-        flex: 0 0 calc((100% / 4) - 10px); /* Default size */
-        height: 300px; /* Default height */
-        width: 200px; /* Maintain aspect ratio */
+        flex: 0 0 calc((100% / 4) - 10px);
+        height: 300px; 
+        width: 200px; 
     }
 }
 

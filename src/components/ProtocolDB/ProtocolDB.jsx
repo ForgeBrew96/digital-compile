@@ -64,11 +64,23 @@ const ProtocolDB = ({ user, ogCards }) => {
 
     const handleEditChange = (e) => {
         const { name, value } = e.target;
-        setEditCard(prevCard => ({
-            ...prevCard,
-            [name]: value.startsWith('effects.') ? { ...prevCard.effects, [name.split('.')[1]]: value } : value
-        }));
+        if (name.startsWith('effects.')) {
+            const effectName = name.split('.')[1];
+            setEditCard(prevCard => ({
+                ...prevCard,
+                effects: {
+                    ...prevCard.effects,
+                    [effectName]: value
+                }
+            }));
+        } else {
+            setEditCard(prevCard => ({
+                ...prevCard,
+                [name]: value
+            }));
+        }
     };
+    
 
     const filteredCards = showCustomCards
         ? customCards.filter(card => selectedProtocols.size === 0 || selectedProtocols.has(card.protocol_id))

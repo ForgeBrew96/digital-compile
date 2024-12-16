@@ -15,14 +15,14 @@ const CustomCard = ({ user }) => {
         }
     });
     const [protocols, setProtocols] = useState([]);
-    const navigate = useNavigate(); // Correctly instantiate navigate
+    const navigate = useNavigate();
 
     useEffect(() => {
         const fetchProtocols = async () => {
             try {
                 const data = await cardServices.getProtocols();
                 setProtocols(data);
-                console.log('Fetched Protocols:', data); // Log fetched protocols
+                console.log('Fetched Protocols:', data);
             } catch (err) {
                 console.error('Failed to obtain protocols', err);
             }
@@ -44,7 +44,7 @@ const CustomCard = ({ user }) => {
         } else {
             setFormData((prevData) => ({
                 ...prevData,
-                [name]: name === 'protocol_id' ? parseInt(value, 10) : value // Ensure protocol_id is an integer
+                [name]: name === 'protocol_id' ? parseInt(value, 10) : value
             }));
         }
     };
@@ -65,7 +65,7 @@ const CustomCard = ({ user }) => {
                     lower: ''
                 }
             });
-            navigate('/protocoldb'); // Use navigate function correctly
+            navigate('/protocoldb');
         } catch (err) {
             console.error('Failed to create custom card', err);
         }
