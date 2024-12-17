@@ -8,27 +8,11 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  display:center;
 }
 
 ul{
  list-style: none
-}
-
-.signUp-In {
-display: flex;
-flex-direction: row;
-justify-content: space-around;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #A47E58aa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #457B9Daa);
 }
 
 .sidebar {
@@ -102,22 +86,6 @@ justify-content: space-around;
 #main {
   transition: margin-left .5s;
   padding: 16px;
-}
-
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .card {

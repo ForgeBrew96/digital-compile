@@ -52,7 +52,7 @@ const closeNav = () => {
         </nav>
 
     ) : (
-       <p></p>
+       null
     )
 }
     </div>

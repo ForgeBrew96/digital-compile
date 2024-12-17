@@ -13,13 +13,11 @@ html, body {
 }
 
 .logo {
-    width: 300px;
-    height: auto;
+    width: 400px;
     object-fit: contain;
     align-self: center;
-    margin-bottom: 230px;
-    margin-left: -18px;
-    border-radius: 20%;
+    margin-bottom: 130px;
+    border-radius: 15%;
 }
 
 .landing-title {
