@@ -9,10 +9,10 @@ What is the function of this app in MVP?
 . Compile is a great game that can easily be adapted to a virtual experience. The game has little to no viewable data online. This site allows users to learn everything about the game prior to purchasing. The goal would be to be able to program the virtual experience of the game with this now established API of the card content. 
 
 Deployed Site Link: https://protocolcenter.netlify.app/
-Trello Planning: https://trello.com/b/8xgEZNXE/compiledigitalversion (Includes ERD and Wireframe)
 Back End: https://protocol-center-back-end-9bcfb1d8e88f.herokuapp.com/
 Git Hub_Front End: https://github.com/ForgeBrew96/digital-compile.git
 Git Hub_Back End: https://github.com/ForgeBrew96/digital-compile-backend.git
+Trello Planning: https://trello.com/b/8xgEZNXE/compiledigitalversion (Includes ERD and Wireframe)
 
 Technologies: 
 React
